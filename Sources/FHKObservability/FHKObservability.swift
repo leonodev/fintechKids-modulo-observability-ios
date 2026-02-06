@@ -6,11 +6,11 @@ import Foundation
 import FirebaseAnalytics
 
 
-public protocol AnalyticsProtocol {
+public protocol FHKAnalyticsProtocol {
     func track(_ event: AnalyticsEvent)
 }
 
-public final class FHKAnalytics: AnalyticsProtocol {
+public final class FHKAnalytics: FHKAnalyticsProtocol {
 
     public init() {}
 
