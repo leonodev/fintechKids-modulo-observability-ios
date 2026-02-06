@@ -10,9 +10,9 @@ import Combine
 import FHKObservability
 
 class ContentViewModel: ObservableObject {
-    var analytics: AnalyticsProtocol
+    var analytics: FHKAnalyticsProtocol
     
-    init(analytics: AnalyticsProtocol = FHKAnalytics()) {
+    init(analytics: FHKAnalyticsProtocol = FHKAnalytics()) {
         self.analytics = analytics
     }
     

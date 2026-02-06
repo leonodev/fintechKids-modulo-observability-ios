@@ -14,10 +14,19 @@ public enum AnalyticsEvent {
     public struct Screen {
         public let name: String
         public let screenClass: String
+        
+        public init(name: String, screenClass: String) {
+            self.name = name
+            self.screenClass = screenClass
+        }
     }
     
     public struct Button {
         public let name: String
+        
+        public init(name: String) {
+            self.name = name
+        }
     }
 }
 
