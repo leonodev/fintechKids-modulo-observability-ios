@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5D2B14512F35F4B6009704AE /* FHKObservability in Frameworks */ = {isa = PBXBuildFile; productRef = 5D2B14502F35F4B6009704AE /* FHKObservability */; };
+		5D2B14D52F35F79B009704AE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5D2B14D42F35F79B009704AE /* GoogleService-Info.plist */; };
+		5D2B157A2F3610C3009704AE /* FHKObservability.icon in Resources */ = {isa = PBXBuildFile; fileRef = 5D2B15792F3610C3009704AE /* FHKObservability.icon */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,11 +33,26 @@
 		5D2B14192F35E92D009704AE /* FHKObservabilityDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FHKObservabilityDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D2B14262F35E930009704AE /* FHKObservabilityDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FHKObservabilityDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D2B14302F35E930009704AE /* FHKObservabilityDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FHKObservabilityDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D2B14D42F35F79B009704AE /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5D2B15792F3610C3009704AE /* FHKObservability.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = FHKObservability.icon; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		5D2B157C2F3610E1009704AE /* Exceptions for "FHKObservabilityDemo" folder in "FHKObservabilityDemo" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 5D2B14182F35E92D009704AE /* FHKObservabilityDemo */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		5D2B141B2F35E92D009704AE /* FHKObservabilityDemo */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				5D2B157C2F3610E1009704AE /* Exceptions for "FHKObservabilityDemo" folder in "FHKObservabilityDemo" target */,
+			);
 			path = FHKObservabilityDemo;
 			sourceTree = "<group>";
 		};
@@ -80,6 +97,8 @@
 		5D2B14102F35E92D009704AE = {
 			isa = PBXGroup;
 			children = (
+				5D2B15792F3610C3009704AE /* FHKObservability.icon */,
+				5D2B14D42F35F79B009704AE /* GoogleService-Info.plist */,
 				5D2B141B2F35E92D009704AE /* FHKObservabilityDemo */,
 				5D2B14292F35E930009704AE /* FHKObservabilityDemoTests */,
 				5D2B14332F35E930009704AE /* FHKObservabilityDemoUITests */,
@@ -221,6 +240,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D2B157A2F3610C3009704AE /* FHKObservability.icon in Resources */,
+				5D2B14D52F35F79B009704AE /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,13 +423,14 @@
 		5D2B143B2F35E930009704AE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = FHKObservability;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TZ6ZTCG253;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FHKObservabilityDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -434,13 +456,14 @@
 		5D2B143C2F35E930009704AE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = FHKObservability;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TZ6ZTCG253;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FHKObservabilityDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
