@@ -11,7 +11,7 @@ public enum AnalyticsEvent {
     case screenView(Screen)
     case tapButton(Button)
     
-    public struct Screen {
+    public struct Screen: Equatable {
         public let name: String
         public let screenClass: String
         
@@ -21,7 +21,7 @@ public enum AnalyticsEvent {
         }
     }
     
-    public struct Button {
+    public struct Button: Equatable {
         public let name: String
         
         public init(name: String) {
