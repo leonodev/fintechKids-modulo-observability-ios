@@ -6,10 +6,12 @@
 //
 
 import Foundation
+import FHKCore
 
 public enum AnalyticsEvent {
     case screenView(Screen)
     case tapButton(Button)
+    case error(ErrorDetail)
     
     public struct Screen: Equatable {
         public let name: String
@@ -28,6 +30,16 @@ public enum AnalyticsEvent {
             self.name = name
         }
     }
+    
+    public struct ErrorDetail: Equatable {
+        public let type: String
+        public let message: String
+        
+        public init(type: String, message: String) {
+            self.type = type
+            self.message = message
+        }
+    }
 }
 
 public extension AnalyticsEvent {
@@ -38,7 +50,10 @@ public extension AnalyticsEvent {
             
         case .tapButton:
             return "tap_button"
-        }
+            
+        case .error:
+            return "app_error"
+        }   
     }
     
     var parameters: [String: Any] {
@@ -54,6 +69,24 @@ public extension AnalyticsEvent {
             return [
                 "button_name": button.name
             ]
+            
+        case .error(let detail):
+            return [
+                "error_type": detail.type,
+                "error_message": detail.message
+            ]
         }
+    }
+}
+
+
+public extension AnalyticsEvent.ErrorDetail {
+    init(from fhkError: any FHKError) {
+        // Extraemos el nombre del tipo de error
+        let errorType = String(describing: Swift.type(of: fhkError))
+        // Extraemos el caso específico
+        let errorMessage = String(describing: fhkError)
+        
+        self.init(type: errorType, message: errorMessage)
     }
 }

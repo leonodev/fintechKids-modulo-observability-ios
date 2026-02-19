@@ -20,6 +20,60 @@
       }
     },
     {
+      "identity" : "fintechkids-modulo-config-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/leonodev/fintechKids-modulo-config-ios.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "58834e6310b230765190737b25e75734640a3aab"
+      }
+    },
+    {
+      "identity" : "fintechkids-modulo-core-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/leonodev/fintechKids-modulo-core-ios.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "faffd287af239738552ef22d6508a34f4eb82c5c"
+      }
+    },
+    {
+      "identity" : "fintechkids-modulo-designsystem-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/leonodev/fintechKids-modulo-designsystem-ios.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "a60ad6e985f7630888aa947c435e72b524545426"
+      }
+    },
+    {
+      "identity" : "fintechkids-modulo-injections-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/leonodev/fintechKids-modulo-injections-ios.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "ecab87f9f53fa30e344bf3f030f91c00e0cad097"
+      }
+    },
+    {
+      "identity" : "fintechkids-modulo-storage-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/leonodev/fintechKids-modulo-storage-ios.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "1222999a4c9069ffe1656bc0dc19d92db4923db1"
+      }
+    },
+    {
+      "identity" : "fintechkids-modulo-utils-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/leonodev/fintechKids-modulo-utils-ios.git",
+      "state" : {
+        "revision" : "133c1e36451b4a01de243388def3f0df30ffe79c",
+        "version" : "1.0.2"
+      }
+    },
+    {
       "identity" : "firebase-ios-sdk",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/firebase/firebase-ios-sdk.git",
@@ -101,6 +155,15 @@
       }
     },
     {
+      "identity" : "lottie-spm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/airbnb/lottie-spm.git",
+      "state" : {
+        "revision" : "69faaefa7721fba9e434a52c16adf4329c9084db",
+        "version" : "4.6.0"
+      }
+    },
+    {
       "identity" : "nanopb",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/firebase/nanopb.git",
@@ -116,6 +179,87 @@
       "state" : {
         "revision" : "540318ecedd63d883069ae7f1ed811a2df00b6ac",
         "version" : "2.4.0"
+      }
+    },
+    {
+      "identity" : "supabase-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/supabase/supabase-swift.git",
+      "state" : {
+        "revision" : "0f8bf83b55709e5530cd842a0185b9abba7a3c6c",
+        "version" : "2.41.1"
+      }
+    },
+    {
+      "identity" : "swift-algorithms",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-algorithms.git",
+      "state" : {
+        "revision" : "87e50f483c54e6efd60e885f7f5aa946cee68023",
+        "version" : "1.2.1"
+      }
+    },
+    {
+      "identity" : "swift-asn1",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-asn1.git",
+      "state" : {
+        "revision" : "810496cf121e525d660cd0ea89a758740476b85f",
+        "version" : "1.5.1"
+      }
+    },
+    {
+      "identity" : "swift-clocks",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/swift-clocks",
+      "state" : {
+        "revision" : "cc46202b53476d64e824e0b6612da09d84ffde8e",
+        "version" : "1.0.6"
+      }
+    },
+    {
+      "identity" : "swift-concurrency-extras",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/swift-concurrency-extras",
+      "state" : {
+        "revision" : "5a3825302b1a0d744183200915a47b508c828e6f",
+        "version" : "1.3.2"
+      }
+    },
+    {
+      "identity" : "swift-crypto",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-crypto.git",
+      "state" : {
+        "revision" : "6f70fa9eab24c1fd982af18c281c4525d05e3095",
+        "version" : "4.2.0"
+      }
+    },
+    {
+      "identity" : "swift-http-types",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-http-types.git",
+      "state" : {
+        "revision" : "45eb0224913ea070ec4fba17291b9e7ecf4749ca",
+        "version" : "1.5.1"
+      }
+    },
+    {
+      "identity" : "swift-numerics",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-numerics.git",
+      "state" : {
+        "revision" : "0c0290ff6b24942dadb83a929ffaaa1481df04a2",
+        "version" : "1.1.1"
+      }
+    },
+    {
+      "identity" : "xctest-dynamic-overlay",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/xctest-dynamic-overlay",
+      "state" : {
+        "revision" : "dfd70507def84cb5fb821278448a262c6ff2bbad",
+        "version" : "1.9.0"
       }
     }
   ],
