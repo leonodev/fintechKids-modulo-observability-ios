@@ -81,7 +81,7 @@ public extension AnalyticsEvent {
 
 
 public extension AnalyticsEvent.ErrorDetail {
-    init(from fhkError: any FHKError) {
+    public init(from fhkError: any FHKError) {
         // Extraemos el nombre del tipo de error
         let errorType = String(describing: Swift.type(of: fhkError))
         // Extraemos el caso específico
